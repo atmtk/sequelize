@@ -2425,6 +2425,7 @@ ${associationOwner._getAssociationDebugList()}`);
                   connection: options.connection,
                   transaction: options.transaction,
                   logging: options.logging,
+                  ignoreDuplicates: options.ignoreDuplicates,
                 });
 
                 const createdAssociationInstances = await recursiveBulkCreate(
@@ -2604,6 +2605,7 @@ ${associationOwner._getAssociationDebugList()}`);
                 connection: options.connection,
                 transaction: options.transaction,
                 logging: options.logging,
+                ignoreDuplicates: options.ignoreDuplicates,
               });
 
               const createdAssociationInstances = await recursiveBulkCreate(
@@ -2660,6 +2662,7 @@ ${associationOwner._getAssociationDebugList()}`);
                     connection: options.connection,
                     transaction: options.transaction,
                     logging: options.logging,
+                    ignoreDuplicates: options.ignoreDuplicates,
                   },
                 );
                 throughOptions.model = include.association.throughModel;
